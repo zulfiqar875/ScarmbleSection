@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('Dashboard');
+    return view('Demo');
 });
 Route::get('/d', function () {
     return view('Demo');
@@ -23,3 +23,7 @@ Route::get('/login', function () {
 Route::get('/portal', function () {
     return view('Portal');
 });
+
+
+Route::post('/register','StudentController@Register');
+Route::post('/Auth','StudentController@Login');

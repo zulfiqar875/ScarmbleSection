@@ -179,6 +179,7 @@
         <div id="section1" class="container-fluid bg-dark" style="padding-top:70px;padding-bottom:70px">
             <div id="jumimg" class="jumbotron text-center mt-5">
                 <h1 class="mb-5 text-primary">Get The Best Free Online Courses</h1>
+                <h3 class="text-danger text-center mt-3"></h3>
                 <h3> if your actions inspire others to dream more, learn more, do more and <br>
                 become more, you are leader</h3>
 
@@ -199,26 +200,26 @@
                                     @csrf
                                     <div class="row m-1">
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="First Name" required class="form-control" id="">
+                                            <input type="text" name="fname" placeholder="First Name" required class="form-control" id="">
                                         </div>
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Last Name" required class="form-control" id="">
-                                        </div>
-                                    </div>
-                                    <div class="row m-1">
-                                        <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Father Name" required class="form-control" id="">
-                                        </div>
-                                        <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Student CNIC" required class="form-control" id="">
+                                            <input type="text" name="lname" placeholder="Last Name" required class="form-control" id="">
                                         </div>
                                     </div>
                                     <div class="row m-1">
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Age" required class="form-control" id="">
+                                            <input type="text" name="fathername" placeholder="Father Name" required class="form-control" id="">
                                         </div>
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <select name="" id="" required class="form-control">
+                                            <input type="text" name="scnic" placeholder="Student CNIC" required class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="row m-1">
+                                        <div class="col-md-6 col-lg-6 md-xl-6">
+                                            <input type="text" name="age" placeholder="Age" required class="form-control" id="">
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 md-xl-6">
+                                            <select name="gender" id="" required class="form-control">
                                                 <option value="Male">Male</option>
                                                 <option value="Female">Female</option>
                                                 <option value="Group">Group</option>
@@ -227,46 +228,46 @@
                                     </div>
                                     <div class="row m-1">
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Address" required class="form-control" id="">
+                                            <input type="text" name="address" placeholder="Address" required class="form-control" id="">
                                         </div>
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Post Code" required class="form-control" id="">
-                                        </div>
-                                    </div>
-                                    <div class="row m-1">
-                                        <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="City" required class="form-control" id="">
-                                        </div>
-                                        <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Country" required class="form-control" id="">
+                                            <input type="text" name="postcode" placeholder="Post Code" required class="form-control" id="">
                                         </div>
                                     </div>
                                     <div class="row m-1">
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Contact Number" required class="form-control" id="">
+                                            <input type="text" name="city" placeholder="City" required class="form-control" id="">
                                         </div>
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Email" required class="form-control" id="">
+                                            <input type="text" name="country" placeholder="Country" required class="form-control" id="">
                                         </div>
                                     </div>
                                     <div class="row m-1">
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Username" required class="form-control" id="">
+                                            <input type="text" name="contact" placeholder="Contact Number" required class="form-control" id="">
                                         </div>
                                         <div class="col-md-6 col-lg-6 md-xl-6">
-                                            <input type="text" name="" placeholder="Password" required class="form-control" id="">
+                                            <input type="text" name="email" placeholder="Email" required class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="row m-1">
+                                        <div class="col-md-6 col-lg-6 md-xl-6">
+                                            <input type="text" name="username" placeholder="Username" required class="form-control" id="">
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 md-xl-6">
+                                            <input type="text" name="password" placeholder="Password" required class="form-control" id="">
                                         </div>
                                     </div>
                                     <div class="row m-1">
                                         <div class="col-md-12 col-lg-12 md-xl-12">
-                                        <select name="" id="" required class="form-control">
+                                        <select name="course" id="" required class="form-control">
                                                 <option value="">-- Select Courses --</option>
-                                                <option value="Python">Python</option>
-                                                <option value="C/C++">C/C++</option>
-                                                <option value="Network Administrator">Network Administrator (Linux)</option>
-                                                <option value="Web Development">Web Develpoment</option>
-                                                <option value="Android Studio">Android Studio</option>
-                                                <option value="Graphic Design">Graphic Design</option>
+                                                <option value="Py001">Python</option>
+                                                <option value="CC002">C/C++</option>
+                                                <option value="NA003">Network Administrator (Linux)</option>
+                                                <option value="WD004">Web Develpoment</option>
+                                                <option value="AS005">Android Studio</option>
+                                                <option value="GD006">Graphic Design</option>
                                             </select>
                                         </div>
                                     </div>
@@ -338,7 +339,7 @@
             </div>
             <div class="col-md-4 col-lg-4 col-xl-4">
                 <div class="card" style="width: 23rem;">
-                    <img class="card-img-top" src="https://lh3.googleusercontent.com/proxy/r0vRW-FXWuB2j_cUEThO44O7Kt9aQjaDtFceUcWC6ndO84lQu8sT4XR90A-w_w1-VhxJ0fjYeHC7AY-grtAuguPAOoc1sunXNl0L2l2WMWhNXlj7MKq1KWzLjanw" alt="Card image cap">
+                    <img class="card-img-top" src="https://lh3.googleusercontent.com/proxy/Hpk_cGBCTI6wToUoZvJfpVSwZlIYCtxmgzCe7K_XEfTH_lrep4UXsGDc04ugFsltqRd8EGmEUnuRP-O27GM6Kw_NIh30sCou8AZupoNGIe0oOKVOe5hSvKZV4Dct" alt="Card image cap">
                     <a href="" class="check">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
