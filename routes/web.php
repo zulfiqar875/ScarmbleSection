@@ -14,8 +14,8 @@
 Route::get('/', function () {
     return view('Demo');
 });
-Route::get('/d', function () {
-    return view('Demo');
+Route::get('/adminpanel', function () {
+    return view('AdminPanel');
 });
 Route::get('/login', function () {
     return view('Login');
@@ -24,6 +24,12 @@ Route::get('/portal', function () {
     return view('Portal');
 });
 
+Route::get('/php','StudentController@php');
 
 Route::post('/register','StudentController@Register');
 Route::post('/Auth','StudentController@Login');
+Route::post('/uploadAsg','StudentController@uploadAsg');
+Route::post('/uploadCou','StudentController@uploadCou');
+
+Route::get('/Download/{File}','StudentController@download');
+Route::post('/Assignment/upload/{filenamae}','StudentController@uploadAsgStd');
